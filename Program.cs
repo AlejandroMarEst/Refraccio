@@ -1,8 +1,9 @@
 ﻿using System;
 
-namespace Refraccio { 
-    class Refraccio
+namespace Refracció { 
+    class Refracció
     {
+
         static double CalculateRectangleArea(double width, double height)
         {
             return width * height;
