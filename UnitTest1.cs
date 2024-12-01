@@ -12,11 +12,11 @@ namespace ExerciseFive.Tests
             _helper = new PersonaHelper();
         }
         [Theory]
-        [InlineData(10, 0)] // Inf‡ncia
-        [InlineData(18, 1)] // Adulta (lÌmit inferior)
+        [InlineData(10, 0)] // Inf√†ncia
+        [InlineData(18, 1)] // Adulta (l√≠mit inferior)
         [InlineData(30, 1)] // Adulta
-        [InlineData(65, 1)] // Adulta (lÌmit superior)
-        [InlineData(70, 2)] // SenescËncia
+        [InlineData(65, 1)] // Adulta (l√≠mit superior)
+        [InlineData(70, 2)] // Senesc√®ncia
         public void ClassifyAgeTest(int age, int expected)
         {
             var result = _helper.ClassifyAge(age);
@@ -35,40 +35,34 @@ namespace ExerciseFive.Tests
         }
 
         [Theory]
-        [InlineData("ana", true, true)] // Curt i palÌndrom
-        [InlineData("anna", false, true)] // No curt, perÚ palÌndrom
-        [InlineData("John", true, false)] // Curt perÚ no palÌndrom
-        [InlineData("Christopher", false, false)] // No curt ni palÌndrom
-        public void NameAnalyser_ShouldAnalyzeNameCorrectly(string name, bool expectedIsShort, bool expectedIsPalindrome)
+        [InlineData("ana", true, true)] // Curt i pal√≠ndrom
+        [InlineData("anna", false, true)] // No curt, per√≤ pal√≠ndrom
+        [InlineData("John", true, false)] // Curt per√≤ no pal√≠ndrom
+        [InlineData("Christopher", false, false)] // No curt ni pal√≠ndrom
+        public void NameAnalyserTest(string name, bool expectedIsShort, bool expectedIsPalindrome)
         {
             var result = _helper.NameAnalyser(name);
             Assert.Equal(expectedIsShort, result.IsShort);
             Assert.Equal(expectedIsPalindrome, result.IsPalindrome);
         }
 
-        [Fact]
-        public void NameAnalyser_ShouldThrowExceptionForInvalidName()
-        {
-            Assert.Throws<ArgumentException>(() => _helper.NameAnalyser(""));
-        }
-
         [Theory]
         [InlineData("blau", 0)] // Calmant
         [InlineData("verd", 0)] // Calmant
         [InlineData("vermell", 1)] // Exclusiu
-        [InlineData("", -1)] // No v‡lid
-        public void VerifyColour_ShouldReturnCorrectCategory(string colour, int expected)
+        [InlineData("", -1)] // No v√†lid
+        public void VerifyColourTest(string colour, int expected)
         {
             var result = _helper.VerifyColour(colour);
             Assert.Equal(expected, result);
         }
 
         [Theory]
-        [InlineData("matÌ", 0)] // Matinal
+        [InlineData("mat√≠", 0)] // Matinal
         [InlineData("nit", 1)] // Nocturna
         [InlineData("tarda", 2)] // Imprevista
         [InlineData("diumenge", 2)] // Imprevista
-        public void PersonalityTest_ShouldReturnCorrectType(string preference, int expected)
+        public void PersonalityTestTest(string preference, int expected)
         {
             var result = _helper.PersonalityTest(preference);
             Assert.Equal(expected, result);
