@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Refracció", "Refracció.csproj", "{CDBEA8F9-866D-41CF-B0CA-A14063CE5388}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test Refacció", "..\Test Refacció\Test Refacció.csproj", "{9C8E4557-80C5-436E-A53E-61F98DC8769A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test Refacció", "..\Test Refacció\Test Refacció.csproj", "{9263146B-CFEC-493F-BC10-D44086B15BF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{CDBEA8F9-866D-41CF-B0CA-A14063CE5388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDBEA8F9-866D-41CF-B0CA-A14063CE5388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDBEA8F9-866D-41CF-B0CA-A14063CE5388}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C8E4557-80C5-436E-A53E-61F98DC8769A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C8E4557-80C5-436E-A53E-61F98DC8769A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C8E4557-80C5-436E-A53E-61F98DC8769A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C8E4557-80C5-436E-A53E-61F98DC8769A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9263146B-CFEC-493F-BC10-D44086B15BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9263146B-CFEC-493F-BC10-D44086B15BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9263146B-CFEC-493F-BC10-D44086B15BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9263146B-CFEC-493F-BC10-D44086B15BF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
