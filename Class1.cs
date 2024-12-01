@@ -41,11 +41,11 @@
             {
                 case "blau":
                 case "verd":
-                    return 0; // Calmants
+                    return 0; 
                 case "daurat":
-                    return 1; // Exclusiu
+                    return 1; 
                 default:
-                    return -1; // Invàlid
+                    return -1; 
             }
         }
         public static int PersonalityTest(string preference)
